@@ -92,16 +92,10 @@
                     invader.x + invader.width > player.x &&
                     invader.y < player.y + player.height &&
                     invader.y + invader.height > player.y
-                ) {
-                    // 画面遷移を削除
-                    // window.location.href = 'gameover.html';
-                }
+                ) 
 
                 // インベーダーが下まで到達した場合
                 if (invader.y + invader.height > canvas.height) {
-                    // 画面遷移を削除
-                    // window.location.href = 'gameover.html';
-                }
             });
 
             bullets.forEach((bullet, index) => {
